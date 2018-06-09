@@ -1,11 +1,14 @@
 <template>
   <form @submit.prevent="enter()">
+    <div id="loginForm">
+    </div>
     <label>Login</label>
     <input type="text" v-model="user.login">
     <label>Hasło</label>
     <input type="password" v-model="user.password">
     <button type="submit">{{ labelOfTheButton }}</button>
   </form>
+
 </template>
 
 <script>
