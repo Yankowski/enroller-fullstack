@@ -38,6 +38,15 @@
             },
             logout() {
                 this.authenticatedUsername = '';
+            },
+            register(user) {
+                this.$http.post('participants', user)
+                        .then(response => {
+                           
+                        })
+                        .catch(response => {
+                            // nie udało sie
+                        });
             }
         }
     };
